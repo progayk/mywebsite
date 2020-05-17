@@ -15,19 +15,36 @@
 <body onload="onLoad()">
 
 
-    <div class="page container">
+    <div class="page container home-page">
 
         <header class="px-4 md:px-8 py-4 flex items-center">
+
+            <!-- social links -->
+            <div class="social-links">
+                <ul>
+                    <li>
+                        <a href="instagram.com/maykjony">
+                            <!-- style="background-image: url('./assets/img/fa-instagram.svg')" -->
+                            <svg width="24" height="24" viewBox="0 0 449 449" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M224.175 109.175C160.575 109.175 109.275 160.475 109.275 224.075C109.275 287.675 160.575 338.975 224.175 338.975C287.775 338.975 339.075 287.675 339.075 224.075C339.075 160.475 287.775 109.175 224.175 109.175ZM224.175 298.775C183.075 298.775 149.475 265.275 149.475 224.075C149.475 182.875 182.975 149.375 224.175 149.375C265.375 149.375 298.875 182.875 298.875 224.075C298.875 265.275 265.275 298.775 224.175 298.775V298.775ZM370.575 104.475C370.575 119.375 358.575 131.275 343.775 131.275C328.875 131.275 316.975 119.275 316.975 104.475C316.975 89.675 328.975 77.675 343.775 77.675C358.575 77.675 370.575 89.675 370.575 104.475ZM446.675 131.675C444.975 95.775 436.775 63.975 410.475 37.775C384.275 11.575 352.475 3.375 316.575 1.575C279.575 -0.524998 168.675 -0.524998 131.675 1.575C95.875 3.275 64.075 11.475 37.775 37.675C11.475 63.875 3.375 95.675 1.575 131.575C-0.525 168.575 -0.525 279.475 1.575 316.475C3.275 352.375 11.475 384.175 37.775 410.375C64.075 436.575 95.775 444.775 131.675 446.575C168.675 448.675 279.575 448.675 316.575 446.575C352.475 444.875 384.275 436.675 410.475 410.375C436.675 384.175 444.875 352.375 446.675 316.475C448.775 279.475 448.775 168.675 446.675 131.675V131.675ZM398.875 356.175C391.075 375.775 375.975 390.875 356.275 398.775C326.775 410.475 256.775 407.775 224.175 407.775C191.575 407.775 121.475 410.375 92.075 398.775C72.475 390.975 57.375 375.875 49.475 356.175C37.775 326.675 40.475 256.675 40.475 224.075C40.475 191.475 37.875 121.375 49.475 91.975C57.275 72.375 72.375 57.275 92.075 49.375C121.575 37.675 191.575 40.375 224.175 40.375C256.775 40.375 326.875 37.775 356.275 49.375C375.875 57.175 390.975 72.275 398.875 91.975C410.575 121.475 407.875 191.475 407.875 224.075C407.875 256.675 410.575 326.775 398.875 356.175Z" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li><a href="mailto:aykilkilic@gmail.com">
+                            <svg width="24" height="24" viewBox="0 0 512 384" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M464 0H48C21.49 0 0 21.49 0 48V336C0 362.51 21.49 384 48 384H464C490.51 384 512 362.51 512 336V48C512 21.49 490.51 0 464 0ZM464 48V88.805C441.578 107.064 405.832 135.456 329.413 195.295C312.572 208.542 279.212 240.367 256 239.996C232.792 240.371 199.421 208.537 182.587 195.295C106.18 135.465 70.425 107.067 48 88.805V48H464ZM48 336V150.398C70.914 168.649 103.409 194.26 152.938 233.044C174.795 250.249 213.072 288.23 256 287.999C298.717 288.23 336.509 250.8 359.053 233.052C408.581 194.269 441.085 168.651 464 150.399V336H48Z" />
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
             <!-- logo -->
-            <div>
-                <h1 class="font-black text-3xl font-alegreya tracking-wide text-gray-900">AYKIL KILIÇ</h1>
+            <div class="w-full">
+                <h1 class="font-black text-4xl font-alegreya tracking-wide text-gray-900">AYKIL KILIÇ</h1>
                 <span id="self-def" class="font-roboto-slab cursor-pointer">Bazen çok sıkılır</span>
             </div>
-            <!-- links -->
-            <!-- <nav class="ml-8">
-                <a href="/about" class="font-medium">About</a>
-            </nav> -->
-
         </header>
 
 
@@ -35,38 +52,42 @@
 
             <!-- projects -->
             <article class="article">
-                <h2>PROJELER</h2>
-                <h6 class="subtitle">Kimi sorumluluk ve sorumsuzluklar.</h6>
+                <h2 class="title">- PROJELER -</h2>
+                <h6 class="subtitle">Kimi sorumluluklar.</h6>
 
                 <!-- programlar -->
-                <h3>WEB YAZILIM & TASARIM</h3>
-                <ul>
-                    <li>
+                <!-- <h3 class="section-title">WEB YAZILIM & TASARIM PROJELERİ</h3> -->
+                <h3 class="section-title"></h3>
+                <ul class="media-list">
+                    <li class="list-item">
                         <a href="./projects/project-hafta8.html">
-                            <h4>Hafta8</h4>
-                            <p>Şehir etkinlikleri web uygulaması.</p>
+                            <img src="./assets/img/hafta8-thumb.jpg" alt="">
+                            <div class="info">
+                                <h4>Hafta8</h4>
+                                <p>Şehir etkinlikleri web uygulaması. (şahsi proje)</p>
+                            </div>
                         </a>
                     </li>
-
-                    <li>
+                    <li class="list-item">
                         <a href="./projects/project-paneka-co.html">
-                            <h4>Paneka Co. | Bakery & Pasta</h4>
-                            <p>Unlu mamüller üzerine bir web tasarımı.</p>
+                            <img src="./assets/img/paneka-thumb.jpg" alt="">
+                            <div class="info">
+                                <h4>Paneka Co. | Bakery & Pasta</h4>
+                                <p>Unlu mamüller üzerine bir web tasarımı. (şahsi proje)</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./projects/project-bugi-organizasyon.html">
+                            <img src="./assets/img/bugi-thumb.jpg" alt="">
+                            <div class="info">
+                                <h4>Bugi Organizasyon</h4>
+                                <p>Organizasyon ve etkinlik web sitesi. (müşteri projesi)</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
 
-
-                 <!-- tasarim -->
-                 <h3>FİLM</h3>
-                 <ul>
-                     <li>
-                         <a href="./projects/project-bilemezsin.html">
-                             <h4>Bilemezsin</h4>
-                             <p>Bilemeyecekleriniz üzerine bir kısa film.</p>
-                         </a>
-                     </li>
-                 </ul>
 
             </article>
             <!-- - - - - - - - - - - - - - - - - -  -->
@@ -74,12 +95,12 @@
 
             <!-- serbest yazilar -->
             <article class="article">
-                <h2>SERBEST YAZILAR</h2>
+                <h2 class="title">- YAZILAR -</h2>
                 <h6 class="subtitle">Bir önemi var mı, yok mu? Benim için var.</h6>
 
                 <!-- links -->
-                <h3></h3>
-                <ul>
+                <h3 class="section-title"></h3>
+                <ul class="">
                     <li>
                         <a href="./free-from-writings/duz-yazi-1.html">
                             <h4 class="inline">Düz Yazı 1</h4>
@@ -88,6 +109,29 @@
                                 Belki hiç bir önemi kalmayacak bu yazdıklarımın, yarın.<br />
                                 Ne kadar nefret etsem de yakıyorum sönen sigaramı...
                             </p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <!-- - - - - - - - - - - - - - - - - -  -->
+
+
+            <!-- serbest yazilar -->
+            <article class="article">
+                <h2 class="title">- 'SANAT' -</h2>
+                <h6 class="subtitle">İşinize geliyorsa.</h6>
+
+                <!-- links -->
+                <!-- <h3 class="section-title">FİLM</h3> -->
+                <h3 class="section-title"></h3>
+                <ul class="media-list">
+                    <li class="list-item">
+                        <a href="./projects/project-bilemezsin.html">
+                            <img src="./assets/img/bilemezsin-thumb.jpg" alt="">
+                            <div class="info">
+                                <h4>Bilemezsin</h4>
+                                <p>Bilemediklerime dair bir kısa film.</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -105,22 +149,30 @@
             initSelfDef()
         }
 
+        function randomInt(min, max) {
+	return min + Math.floor((max - min) * Math.random());
+}
+
         function initSelfDef() {
             var selfDef = document.querySelector('#self-def');
             selfDef.addEventListener('click', changeSelfDef)
             // self defs vars
             var defs = [
-                'Bazen çok sıkılır',
-                'Kimi zaman çok eğlenir',
+                'Kimi zaman çok sıkılır',
                 'Kendi kendine de eğlenebilir',
                 'Hayelleri var',
                 'Pek sakindir kendisi çoğu zaman',
+                'Bilemez bazen',
+                "Kim söylemiş beni, Süheyla'ya vurulmuşum diye?",
             ]
-            var defNext = 1
+            // var defNext = randomInt(defs.length-1, 0)
+
             function changeSelfDef() {
-                selfDef.innerText = defs[defNext]
-                defNext = defNext >= defs.length - 1 ? 0 : defNext + 1
+                selfDef.innerText = defs[randomInt(defs.length, 0)]
+                // defNext = defNext >= defs.length - 1 ? 0 : defNext + 1
             }
+
+            changeSelfDef()
         }
 
 
