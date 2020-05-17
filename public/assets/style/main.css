@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+.font-alfa-slab {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.font-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: #111;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+#self-def {
+    display: inline-block;
+    transform: translateY(-8px);
+}
+
+.def-padding {
+    padding: 16px;
+}
+
+.article {
+    padding: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    .article {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .def-padding {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

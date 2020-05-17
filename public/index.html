@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/main.css">
+
+    <title>Aykıl Kılıç</title>
+</head>
+
+<body onload="onLoad()">
+
+
+    <div class="page container">
+
+        <header class="px-4 md:px-8 py-4 flex items-center">
+            <!-- logo -->
+            <div>
+                <h1 class="font-black text-3xl font-alfa-slab tracking-wide text-gray-900">AYKIL KILIÇ</h1>
+                <span id="self-def" class="font-roboto-slab cursor-pointer">Bazen çok sıkılır</span>
+            </div>
+            <!-- links -->
+            <!-- <nav class="ml-8">
+                <a href="/about" class="font-medium">About</a>
+            </nav> -->
+
+        </header>
+
+
+        <main>
+
+            <!-- ideas -->
+            <!-- <article class="article ">
+                <h2 class="font-semibold text-2xl font-roboto-slab text-gray-900">Tartışmalar</h2>
+
+            </article> -->
+            <!-- - - - - - - - - - - - - - - - - -  -->
+
+
+            <!-- serbest yazilar -->
+            <article class="article">
+                <h2 class="font-semibold text-2xl font-roboto-slab text-gray-900">Serbest Yazılar</h2>
+                <!-- links -->
+                <ul>
+                    <li class="mt-2">
+                        <a href="./free-from-writings/duz-yazi-1.html">
+                            <span class="font-medium text-lg font-roboto-slab">Düz Yazı 1</span>
+                            <time class="text-gray-500 font-light text-sm md:text-sm ml-1" datetime="2020-05-14">14
+                                Mayıs,
+                                2020</time>
+                            <p class="text-xs md:text-sm text-gray-700 ">
+                                Belki hiç bir önemi kalmayacak bu yazdıklarımın, yarın.<br/>
+                                Ne kadar nefret etsem de yakıyorum sönen sigaramı...
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <!-- - - - - - - - - - - - - - - - - -  -->
+
+        </main>
+
+    </div>
+
+
+    <script>
+
+        function onLoad() {
+            initSelfDef()
+        }
+
+        function initSelfDef() {
+            var selfDef = document.querySelector('#self-def');
+            selfDef.addEventListener('click', changeSelfDef)
+            // self defs vars
+            var defs = [
+                'Bazen çok sıkılır',
+                'Kimi zaman çok eğlenir',
+                'Kendi kendine de eğlenebilir',
+                'Hayelleri var',
+                'Pek sakindir kendisi çoğu zaman',
+            ]
+            var defNext = 1
+            function changeSelfDef() {
+                selfDef.innerText = defs[defNext]
+                defNext = defNext >= defs.length - 1 ? 0 : defNext + 1
+            }
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
