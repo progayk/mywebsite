@@ -61,18 +61,7 @@ body {
     padding-top: 64px;
 }
 
-article h1 {
-    color: var(--text-b);
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin: 0;
-    display: block;
-    /* margin-block-start: 0.83em; */
-    /* margin-block-end: 0.63em; */
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    line-height: 1; 
-}
+
 
 article .title {
     color: rgba(26,32,44,1);
@@ -87,11 +76,6 @@ article .title {
     line-height: 1.5;
 }
 
-article h6 {
-    font-size: 1rem;
-    color: rgba(74,85,104,1);
-    font-weight: 500;
-}
 article .subtitle {
     transform: translateY(-4px);
 }
@@ -161,23 +145,6 @@ article time {
     /* height: 100%; */
 }
 
-@media screen and (min-width: 600px) {
-    .article {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    .def-padding {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    .media-list {
-        justify-content: center;
-    }
-    .media-list .list-item {
-        width: calc(33% - 8px);
-        margin: 4px;
-    }
-}
 
 .social-links {
     display: inline-block;
@@ -205,14 +172,6 @@ article time {
 .social-links svg:hover {
     fill: black;
 }
-
-
-/* .media-list .list-item:not(:first-child) {
-    margin-left: 8px;
-}
-.media-list .list-item:not(:last-child) {
-    margin-right: 8px;
-} */
 
 
 
@@ -252,4 +211,22 @@ article time {
     display: inline-flex;
     align-items: center;
     height: 24px;
+}
+
+@media screen and (min-width: 600px) {
+    .article {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .def-padding {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .media-list {
+        justify-content: center;
+    }
+    .media-list .list-item {
+        width: calc(33% - 8px);
+        margin: 4px;
+    }
 }
