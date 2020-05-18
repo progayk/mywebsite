@@ -129,7 +129,7 @@ article ul li h4.inline {
 }
 
 article ul li p {
-    /* padding: 0 2px; */
+    padding: 0 1px;
     color: var(--text-g-9);
     font-size: 1rem;
     line-height: 1.35;
@@ -280,6 +280,7 @@ article time {
 }
 
 #buy-btn {
+    border: 1px solid var(--text-b-6);
     background-color: var(--text-b-6);
     color: white;
     width: 100%;
