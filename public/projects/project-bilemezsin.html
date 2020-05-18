@@ -9,10 +9,81 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/style/main.css">
 
+
+    <style>
+        .tv-wrapper {
+            margin-top: 1rem;
+            position: relative;
+        }
+
+        #tv {
+            position: relative;
+            z-index: 10;
+            width: 340;
+            margin: 0 auto;
+        }
+
+        #video-in-tv {
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            width: 260px;
+        }
+
+        #tv-controls {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        #play-btn,
+        #timer,
+        #stop-btn {
+            padding: 0.25rem .5rem;
+        }
+
+        #play-btn,
+        #stop-btn {
+            display: inline-block;
+            width: 108px;
+        }
+
+        #timer {
+            text-align: center;
+            display: inline-block;
+            width: 108px;
+        }
+
+        @media screen and (min-width: 656px) {
+
+            .tv-wrapper {
+                width: 656px;
+                margin: 0 auto;
+                margin-top: 2rem
+            }
+
+            #tv {
+                position: relative;
+                z-index: 10;
+                width: 656px;
+                margin: 0 auto;
+            }
+
+            #video-in-tv {
+                position: absolute;
+                top: 34px;
+                left: 38px;
+                width: 480px;
+            }
+
+        }
+    </style>
+
     <title>Proje | Bilemezsin | Aykıl Kılıç</title>
 </head>
 
-<body>
+<body onload="onload()">
 
     <div class="page container web-projects-page">
 
@@ -22,16 +93,107 @@
             </nav>
         </header>
 
-        
-            <main>
-                <article class="article">
-                    <h1 class="title">Bilemezsin</h1>
-                    <h6 class="subtitle">Bilemeyecekleriniz üzerine bir kısa film.</h6>
-                </article>
-            </main>
+
+        <main>
+            <article class="article">
+                <h1 class="title">Bilemezsin</h1>
+                <h6 class="subtitle">Bilemeyecekleriniz üzerine bir kısa film.</h6>
+
+
+                <!-- tv and video -->
+                <div class="tv-wrapper" controls>
+                    <img id="tv" src="../assets/img/tv-frame.png" alt="">
+
+                    <video id="video-in-tv" controls>
+                        <source src="../assets/video/bilemezsin-bw.mp4" type="video/mp4">
+                    </video>
+
+                    <div id="tv-controls">
+                        <button id="play-btn" class="text-blue-600 font-semibold">Oynat</button>
+                        <button id="stop-btn" class="text-red-600 font-semibold">Durdur</button>
+                        <span id="timer">00:00</span>
+                    </div>
+
+                </div>
+
+
+            </article>
+        </main>
 
 
     </div>
+
+
+    <script>
+
+        function onload() {
+            initTv()
+        }
+
+        var videoIsPlaying = false
+        var playBtn = null
+        var stopBtn = null
+        var media = null
+        var timer = null
+
+        function initTv() {
+            // remove controls
+            media = document.querySelector('#video-in-tv')
+            media.removeAttribute('controls');
+
+            // assign time update
+            media.addEventListener('timeupdate', setTime);
+            timer = document.querySelector('#timer')
+
+            // assing event listener to play btn
+            playBtn = document.querySelector('#play-btn')
+            playBtn.addEventListener('click', toggleMedia)
+
+            // assign stop btn
+            stopBtn = document.querySelector('#stop-btn')
+            stopBtn.addEventListener('click', stopMedia)
+        }
+
+        function toggleMedia() {
+            if (media.paused) {
+                playBtn.innerText = 'Duraklat'
+                media.play();
+            } else {
+                playBtn.innerText = 'Oynat'
+                media.pause();
+            }
+        }
+
+        function stopMedia() {
+            media.pause();
+            playBtn.innerText = 'Oynat'
+            media.currentTime = 0;
+        }
+
+        function setTime() {
+            let minutes = Math.floor(media.currentTime / 60);
+            let seconds = Math.floor(media.currentTime - minutes * 60);
+            let minuteValue;
+            let secondValue;
+
+            if (minutes < 10) {
+                minuteValue = '0' + minutes;
+            } else {
+                minuteValue = minutes;
+            }
+
+            if (seconds < 10) {
+                secondValue = '0' + seconds;
+            } else {
+                secondValue = seconds;
+            }
+
+            let mediaTime = minuteValue + ':' + secondValue;
+            timer.textContent = mediaTime;
+
+        }
+
+    </script>
 
 </body>
 

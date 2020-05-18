@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
-
 .font-alegreya {
     font-family: 'Alegreya', serif;
 }
@@ -18,8 +17,6 @@
     --text-b-6: #3182ce;
 }
 
-
-
 html, body {
     font-family: 'Roboto Slab', serif;
 }
@@ -31,7 +28,6 @@ body {
 .page {
     background-image: url('../img/lightpaperfibers.png');
 }
-
 
 .page {
     max-width: 968px;
@@ -61,10 +57,8 @@ body {
     padding-top: 64px;
 }
 
-
-
 article .title {
-    color: rgba(26,32,44,1);
+    color: rgba(26, 32, 44, 1);
     font-size: 1.75rem;
     font-weight: 700;
     margin: 0;
@@ -81,7 +75,7 @@ article .subtitle {
 }
 
 article .section-title {
-    color: rgba(45,55,72,1);
+    color: rgba(45, 55, 72, 1);
     /* margin-top: .5rem; */
     font-size: 1.125rem;
     font-weight: 500;
@@ -93,8 +87,7 @@ article .section-title {
     margin-inline-end: 0px;
 }
 
-
-article ul li h4{
+article ul li h4 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.25;
@@ -103,13 +96,12 @@ article ul li h4{
     margin-top: .125rem;
 }
 
-
-article ul li h4.inline{
+article ul li h4.inline {
     display: inline;
 }
 
-article ul li p{
-    color: rgba(74,85,104,1);
+article ul li p {
+    color: rgba(74, 85, 104, 1);
     font-size: .75rem;
     line-height: 1.5;
     margin-top: 0.25rem;
@@ -121,7 +113,6 @@ article time {
     font-size: .75rem;
     font-weight: 300;
 }
-
 
 .media-list {
     display: flex;
@@ -136,7 +127,7 @@ article time {
 }
 
 .media-list .list-item .info {
-    text-align: left;   
+    text-align: left;
     padding: 4px 4px;
 }
 
@@ -145,49 +136,62 @@ article time {
     /* height: 100%; */
 }
 
-
 .social-links {
     display: inline-block;
     /* width: 128px; */
     position: absolute;
+}
+
+.on-top {
     right: 16px;
     top: 16px;
 }
+
+.on-bottom {
+    right: 16px;
+    bottom: 16px;
+}
+
 .social-links ul {
     display: inline-flex;
+    padding-right: 12px;
 }
+
 .social-links li {
-    margin-left: 16px;;
+    margin-left: 24px;
+    ;
 }
+
 .social-links a {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: transparent;
 }
 
 .social-links svg {
     fill: #666;
 }
+
 .social-links svg:hover {
     fill: black;
 }
 
-
-
 /* web projects page */
+
 .web-projects-page .article .title {
     font-size: 2.25rem;
-    line-height: 1.35;
+    line-height: 1.15;
 }
+
 .web-projects-page .article .subtitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
 .iphone-thumb-w {
     margin-top: 1.25rem;
- }
+}
 
 .iphone-thumb-w img {
     width: 75%;
@@ -200,6 +204,7 @@ article time {
     color: var(--text-b-6);
     font-size: 1.25rem;
 }
+
 .project-link-w a {
     display: flex;
     align-items: center;
@@ -211,6 +216,58 @@ article time {
     display: inline-flex;
     align-items: center;
     height: 24px;
+}
+
+/* ------ web projects -------- */
+
+.painting-img {
+    margin: 0 auto;
+}
+
+/* buy container */
+
+.buy-container {
+    padding: 8px 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+}
+
+.info-c {
+    font-size: 13px;
+    padding: 8px 0px;
+    color: var(--text-g-8);
+}
+
+.btn {
+    padding: 0.25rem .5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#buy-btn {
+    background-color: var(--text-b-6);
+    color: white;
+    width: 100%;
+    margin-bottom: 8px
+}
+
+#gift-btn {
+    color: var(--text-b-6);
+    border: 1px solid var(--text-b-6);
+    width: 100%;
+}
+
+/* ----- buy container ------- */
+
+footer {
+    padding: 16px 16px;
+    position: relative;
 }
 
 @media screen and (min-width: 600px) {
