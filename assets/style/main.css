@@ -15,6 +15,7 @@
     --text-g-7: #4a5568;
     --text-g-6: #718096;
     --text-b-6: #3182ce;
+    --text-b-7: #2b6cb0;;
 }
 
 html, body {
@@ -68,6 +69,10 @@ article .title {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     line-height: 1.5;
+}
+
+.home-page article .title {
+    transform: translateY(-48px);
 }
 
 article .subtitle {
@@ -154,18 +159,18 @@ article time {
 
 .social-links ul {
     display: inline-flex;
-    padding-right: 12px;
+    padding-right: 8px;
 }
 
 .social-links li {
-    margin-left: 24px;
+    margin-left: 20px;
     ;
 }
 
 .social-links a {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-color: transparent;
 }
 
@@ -245,7 +250,7 @@ article time {
 }
 
 .btn {
-    padding: 0.25rem .5rem;
+    padding: 0.5rem .75rem;
     border-radius: 4px;
     font-weight: 600;
 }
@@ -256,11 +261,18 @@ article time {
     width: 100%;
     margin-bottom: 8px
 }
+#buy-btn:hover {
+    background-color: var(--text-b-7);
+}
 
 #gift-btn {
     color: var(--text-b-6);
     border: 1px solid var(--text-b-6);
     width: 100%;
+}
+#gift-btn:hover {
+    color: var(--text-b-7);
+    border: 1px solid var(--text-b-7);
 }
 
 /* ----- buy container ------- */
