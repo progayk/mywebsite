@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;500;600;700&display=swap');
 .font-alegreya {
     font-family: 'Alegreya', serif;
 }
@@ -19,7 +20,9 @@
 }
 
 html, body {
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Kalam', serif;
+    /* font-weight: bold; */
 }
 
 body {
@@ -47,7 +50,7 @@ body {
 }
 
 .article {
-    padding: 16px;
+    padding: 8px;
 }
 
 .home-page header, .media-list, .title, .subtitle, .section-title {
@@ -71,9 +74,9 @@ article .title {
     line-height: 1.5;
 }
 
-.home-page article .title {
+/* .home-page article .title {
     transform: translateY(-48px);
-}
+} */
 
 article .subtitle {
     transform: translateY(-4px);
@@ -106,9 +109,9 @@ article ul li h4.inline {
 }
 
 article ul li p {
-    color: rgba(74, 85, 104, 1);
-    font-size: .75rem;
-    line-height: 1.5;
+    color: var(--text-g-9);
+    font-size: 1rem;
+    line-height: 1.35;
     margin-top: 0.25rem;
 }
 
@@ -126,7 +129,7 @@ article time {
 }
 
 .media-list .list-item {
-    width: calc(50vw - 24px);
+    width: calc(50vw - 16px);
     margin: 4px;
     margin-bottom: 16px;
 }
@@ -295,7 +298,7 @@ footer {
         justify-content: center;
     }
     .media-list .list-item {
-        width: calc(33% - 8px);
-        margin: 4px;
+        width: calc(32% - 8px);
+        margin: 8px;
     }
 }
