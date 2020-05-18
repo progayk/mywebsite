@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .font-alegreya {
     font-family: 'Alegreya', serif;
 }
@@ -15,10 +18,21 @@
     --text-g-7: #4a5568;
     --text-g-6: #718096;
     --text-b-6: #3182ce;
+    --text-b-7: #2b6cb0;;
 }
 
 html, body {
     font-family: 'Roboto Slab', serif;
+    /* font-family: 'Kalam', serif; */
+    /* font-weight: bold; */
+}
+
+.home-page{
+    font-family: 'Kalam', serif;
+}
+.home-page h1 {
+    letter-spacing: 1.5px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 body {
@@ -38,7 +52,7 @@ body {
 
 #self-def {
     display: inline-block;
-    transform: translateY(-8px);
+    /* transform: translateY(-8px); */
 }
 
 .def-padding {
@@ -46,6 +60,10 @@ body {
 }
 
 .article {
+    padding: 8px;
+}
+
+.article#blog {
     padding: 16px;
 }
 
@@ -57,7 +75,12 @@ body {
     padding-top: 64px;
 }
 
+.home-page .title {
+    font-family: 'Permanent Marker', cursive;
+}
 article .title {
+    /* font-family: 'Permanent Marker', cursive; */
+    letter-spacing: 1.24px;
     color: rgba(26, 32, 44, 1);
     font-size: 1.75rem;
     font-weight: 700;
@@ -70,8 +93,12 @@ article .title {
     line-height: 1.5;
 }
 
+/* .home-page article .title {
+    transform: translateY(-48px);
+} */
+
 article .subtitle {
-    transform: translateY(-4px);
+    /* transform: translateY(-4px); */
 }
 
 article .section-title {
@@ -93,7 +120,7 @@ article ul li h4 {
     line-height: 1.25;
     display: block;
     color: inherit;
-    margin-top: .125rem;
+    margin-top: .5rem;
 }
 
 article ul li h4.inline {
@@ -101,10 +128,11 @@ article ul li h4.inline {
 }
 
 article ul li p {
-    color: rgba(74, 85, 104, 1);
-    font-size: .75rem;
-    line-height: 1.5;
-    margin-top: 0.25rem;
+    /* padding: 0 2px; */
+    color: var(--text-g-9);
+    font-size: 1rem;
+    line-height: 1.35;
+    /* margin-top: 0.125rem; */
 }
 
 article time {
@@ -121,14 +149,14 @@ article time {
 }
 
 .media-list .list-item {
-    width: calc(50vw - 24px);
+    width: calc(50vw - 16px);
     margin: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .media-list .list-item .info {
     text-align: left;
-    padding: 4px 4px;
+    /* padding: 4px 4px; */
 }
 
 .media-list .list-item img {
@@ -154,18 +182,18 @@ article time {
 
 .social-links ul {
     display: inline-flex;
-    padding-right: 12px;
+    padding-right: 8px;
 }
 
 .social-links li {
-    margin-left: 24px;
+    margin-left: 20px;
     ;
 }
 
 .social-links a {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-color: transparent;
 }
 
@@ -186,7 +214,7 @@ article time {
 
 .web-projects-page .article .subtitle {
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .iphone-thumb-w {
@@ -245,7 +273,7 @@ article time {
 }
 
 .btn {
-    padding: 0.25rem .5rem;
+    padding: 0.5rem .75rem;
     border-radius: 4px;
     font-weight: 600;
 }
@@ -256,11 +284,18 @@ article time {
     width: 100%;
     margin-bottom: 8px
 }
+#buy-btn:hover {
+    background-color: var(--text-b-7);
+}
 
 #gift-btn {
     color: var(--text-b-6);
     border: 1px solid var(--text-b-6);
     width: 100%;
+}
+#gift-btn:hover {
+    color: var(--text-b-7);
+    border: 1px solid var(--text-b-7);
 }
 
 /* ----- buy container ------- */
@@ -283,7 +318,7 @@ footer {
         justify-content: center;
     }
     .media-list .list-item {
-        width: calc(33% - 8px);
-        margin: 4px;
+        width: calc(32% - 8px);
+        margin: 8px;
     }
 }
