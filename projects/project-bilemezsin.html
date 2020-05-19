@@ -17,6 +17,8 @@
             position: relative;
             width: 340px;
             max-width: 340px;
+            opacity: 0;
+            transition: opacity 500ms ease-out;
         }
 
         #tv {
@@ -65,7 +67,7 @@
                 width: 656px;
                 margin: 0 auto;
                 max-width: 656px;
-                margin-top: 2rem
+                margin-top: 2rem;
             }
 
             #tv {
@@ -107,8 +109,8 @@
 
 
                 <!-- tv and video -->
-                <div class="tv-wrapper" controls>
-                    <img id="tv" src="../assets/img/tv-frame.png" alt="">
+                <div class="tv-wrapper">
+                    <img id="tv"  src="../assets/img/tv-frame.png" alt="">
 
                     <video id="video-in-tv" controls>
                         <source src="../assets/video/bilemezsin-bw.mp4" type="video/mp4">
@@ -131,10 +133,14 @@
 
 
     <script>
+        
 
         function onload() {
             initTv()
+            let tvWrap = document.querySelector('.tv-wrapper')
+            tvWrap.style.opacity = 1
         }
+
 
         var videoIsPlaying = false
         var playBtn = null
@@ -143,6 +149,7 @@
         var timer = null
 
         function initTv() {
+
             // remove controls
             media = document.querySelector('#video-in-tv')
             media.removeAttribute('controls');
