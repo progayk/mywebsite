@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
@@ -30,7 +30,8 @@ html, body {
 .home-page{
     font-family: 'Kalam', serif;
 }
-.home-page h1 {
+
+#site-title {
     letter-spacing: 1.5px;
     font-family: 'Permanent Marker', cursive;
 }
@@ -128,7 +129,7 @@ article ul li h4.inline {
 }
 
 article ul li p {
-    /* padding: 0 2px; */
+    padding: 0 1px;
     color: var(--text-g-9);
     font-size: 1rem;
     line-height: 1.35;
@@ -152,6 +153,10 @@ article time {
     width: calc(50vw - 16px);
     margin: 4px;
     margin-bottom: 24px;
+}
+
+.media-list .list-item.w-full {
+    width: 100%;
 }
 
 .media-list .list-item .info {
@@ -279,6 +284,7 @@ article time {
 }
 
 #buy-btn {
+    border: 1px solid var(--text-b-6);
     background-color: var(--text-b-6);
     color: white;
     width: 100%;
