@@ -7,12 +7,297 @@
 
     <!-- style -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/main.css">
+    <!-- <link rel="stylesheet" href="./assets/style/main.css"> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+    <style>
+        html,
+        body {
+            font-family: 'Roboto Slab', serif;
+            color: #1a202c;
+            font-size: 0.875rem
+        }
+
+        body {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 1rem;
+
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article .header {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+        }
+
+        .img-c {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        header img {
+            width: 72px;
+            height: 72px;
+        }
+
+        .t-w {
+            /* display: flex; */
+            padding-left: 16px;
+        }
+
+        .i-w {
+            margin-top: 0.75rem;
+            /* padding-left: 96px; */
+        }
+
+        .datetime {
+            color: #718096;
+            font-size: 0.75rem;
+        }
+
+        .title {
+            color: #9b2c2c;
+            font-weight: 600;
+
+        }
+
+        .title span {
+            color: black;
+            font-weight: normal;
+        }
+
+        .s-d {
+            border-bottom: 1px solid #718096;
+            color: #718096;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+        ul {
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        ul li {
+            margin-top: 4px
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 
     <title>Özgeçmiş | Aykıl Kılıç</title>
 </head>
 
 <body>
+
+    <!-- TODO -->
+    <!-- [] Add english lang support -->
+    <!-- [] Add links to your works -->
+
+
+    <div class="page container">
+
+        <header class="p-4">
+            <nav>
+                <a href="/">&#8592; Ana Sayfa</a>
+            </nav>
+
+            <div class="mt-6">
+                <h1>AYKIL KILIÇ</h1>
+                <a class="block text-gray-600" href="https://maykjony.com">maykjony.com</a>
+                <a class="block text-gray-600" href="mailto:aykilkilic@gmail.com">aykilkilic@gmail.com</a>
+            </div>
+        </header>
+
+
+        <main>
+
+
+
+            <!-- section divider  -->
+            <div class="s-d">
+                <p>İŞ VE PROJELER</p>
+            </div>
+
+              <!-- medyajet -->
+              <article>
+                <!-- media and header  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/hafta8-logo.png" alt="dr muttalip keser logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2019</time>-</p>
+                        <h3 class="title">Hafta8<span> Kurucu</span>
+                        </h3>
+                        <div class="i-w">
+                            <p>Şehirlerde olup biten etkinliklerin takip ve bilet alınmasına ilişkin yaşadığım sıkıntılar üzerine kurduğum bir dijital etkinlik platformu.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+             <!-- medyajet -->
+             <article>
+                <!-- media and header  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/dr-muttalip-keser-logo.jpg" alt="dr muttalip keser logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2017</time>-</p>
+                        <h3 class="title">Dr. Muttalip Keser <span> Mihmandar ve Temsilci</span>
+                        </h3>
+                        <div class="i-w">
+                            <p>Saç ekim alanında Türkiye'nin ve dünyanın önde gelen doktorlarından olan Dr. Muttalip Keser'in kliniğinde yabancı hastalarla görüşme ve gelen hastalara mihmandarlık yapmaktayım.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+              <!-- medyajet -->
+              <article>
+                <!-- media and header  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/medyajet-logo.png" alt="medyajet logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2017</time>-<time>2019</time></p>
+                        <h3 class="title">Medyajet <span>Jr. Web Developer</span>
+                        </h3>
+                        <div class="i-w">
+                            <p>Web geliştirme ve tasarımı üstüne staj ve çalışmalar yaptım.</p>
+                            <p class="mt-3">Çalışmalar:</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><strong>ODTU SEM</strong> - Arayüz tasarımı.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- maya -->
+            <article>
+                <!-- media and header  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/maya-okullari-logo.png" alt="maya okulları logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2016</time>-<time>2017</time></p>
+                        <h3 class="title">Maya Okulları Oran <span>İspanyolca Öğretmeni</span>
+                        </h3>
+                        <div class="i-w">
+                            <p>Ortaokul düzeyinde ispanyolca öğretmeni olarak görev yaptım.</p>
+                            <p class="mt-3">Çalışmalar:</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><strong>Ortaokul düzeyi dijital eğitim materyalleri</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- mektebim -->
+            <article>
+                <!-- media and header  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/mektebim-koleji-logo.png" alt="mektebim koleji logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2015</time>-<time>2016</time></p>
+                        <h3 class="title">Mektebim Koleji Batıkent <span>İspanyolca Öğretmeni</span>
+                        </h3>
+                        <div class="i-w">
+                            <p>Ortaokul ve lise düzeyinde ispanyolca öğretmeni olarak görev yaptım.</p>
+                            <p class="mt-3">Çalışmalar:</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><strong>Ortaokul düzeyi dijital eğitim materyalleri</strong></a>
+                                </li>
+                                <li>
+                                    <a href="#"><strong>Lise düzeyi dijital eğitim materyalleri</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+
+
+            <!-- section divider  -->
+            <div class="s-d">
+                <p>OKUL</p>
+            </div>
+
+            <article>
+                <!-- pedagogy  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/au-egt-bil.jpeg"
+                            alt="ankara üniversitesi egitim bilimleri fakultesi logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2015</time>-<time>2016</time></p>
+                        <h3 class="title">Ankara Üniversitesi Eğt.Bil.Fak. <span>Pedagojik Formasyon (Sertifika
+                                Programı)</span></h3>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- BS -->
+            <article>
+                <!-- media and header  -->
+                <div class="header">
+                    <div class="img-c">
+                        <img src="./assets/img/Ankara_University_Logo.png" alt="ankara üniversitesi logo">
+                    </div>
+
+                    <div class="t-w">
+                        <p class="datetime"><time>2010</time>-<time>2015</time></p>
+                        <h3 class="title">Ankara Üniversitesi D.T.C.F. <span>İspanyol Dili ve Edebiyatı (Lisans)</span>
+                        </h3>
+                        <div class="i-w">
+                            <p>Onur öğrencisi olarak mezun oldum.</p>
+                            <p>Erasmus programı ile <strong>Zaragoza Üniversitesi(İspanya)</strong>'nde bir yıl eğitim aldım.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+        </main>
+
+
+
+    </div>
 
 </body>
 
