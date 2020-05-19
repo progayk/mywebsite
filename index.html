@@ -131,7 +131,7 @@
                 <!-- links -->
                 <h3 class="section-title"></h3>
                 <ul class="media-list">
-                    <li class="list-item">
+                    <li class="list-item w-full">
                         <a href="./free-from-writings/duz-yazi-1.html">
                             <img src="./assets/img/bir-duz-yazi.png" alt="bir duz yazi">
                             <div class="info">
@@ -224,7 +224,7 @@
 
         function onLoad() {
             initSelfDef()
-            rotateImgs()
+            rotateListItems()
 
             setLang()
         }
@@ -233,8 +233,12 @@
             return min + Math.floor((max - min) * Math.random());
         }
 
-        function rotateImgs() {
+        function rotateListItems() {
+            let listItems = document.querySelectorAll('.list-item') 
 
+            listItems.forEach(item => {
+                item.style.transform = `rotate(${randomInt(-2, 2)}deg)`
+            })
         }
 
         function initSelfDef() {
@@ -247,7 +251,7 @@
                 'Hayalleri var.',
                 'Pek sakindir kendisi çoğu zaman.',
                 'Bilemez bazen.',
-                "Kim söylemiş onu, Süheyla'ya vurulmuş diye?",
+                "Kim söylemiş O'nu, Süheyla'ya vurulmuş diye?",
                 "Web developer & designer",
                 "Let me tell you a story boy...",
                 "'Neden?' diye sorar, durur",
@@ -276,7 +280,7 @@
             }
 
             function getNext() {
-                return defs[randomInt(defs.length, 0)]
+                return defs[randomInt(0, defs.length)]
             }
 
             changeSelfDef()
